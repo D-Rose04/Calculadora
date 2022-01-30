@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/js/index.js"></script>
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="content" id="app">
+        <form action="" name="calc">
+            <input type="text" name="screen" id="calcscreen">
+            <br>           
+            <input type="reset" value="c">
+            <input type="button" name="/" value="÷" onclick="getValue('/')">
+            <input type="button" name="delete" value="del" onclick="del()">
+            <br>
+            <input type="button" name="7" value="7" id="7" onclick="getValue('7')">
+            <input type="button" name="8" value="8" onclick="getValue('8')">
+            <input type="button" name="9" value="9" onclick="getValue('9')">
+            <input type="button" name="x" value="x" onclick="getValue('*')">
+            <br>
+            <input type="button" name="4" value="4" onclick="getValue('4')">
+            <input type="button" name="5" value="5" onclick="getValue('5')">
+            <input type="button" name="6" value="6" onclick="getValue('6')">
+            <input type="button" name="+" value="+" onclick="getValue('+')">
+            <br>
+            <input type="button" name="1" value="1" onclick="getValue('1')">
+            <input type="button" name="2" value="2" onclick="getValue('2')">
+            <input type="button" name="3" value="3" onclick="getValue('3')">
+            <input type="button" name="-" value="-" onclick="getValue('-')">
+            <br>
+            <input type="button" name="0" value="0" onclick="getValue('0')">
+            <input type="button" name="." value="." onclick="getValue('.')">
+            <input type="button" name="=" value="=" onclick="result()">
+            
+
+        </form>
+    </div>
+</body>
+</html>
