@@ -10,4 +10,4 @@ function result(){
 function del(){
     let screen = document.calc.screen.value;
     document.calc.screen.value = screen.slice(0,-1)
-}
+}   
