@@ -1,0 +1,217 @@
+body{
+    background: #1D4350;
+    background: -webkit-linear-gradient(to right, #A43931, #1D4350);
+    background: linear-gradient(to right, #A43931, #1D4350); 
+}
+
+.content{
+    display: flex;
+    margin: 150px;
+    justify-content: center;
+}
+
+.calculator{
+    min-width: 272px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas: "screen screen"
+                        "keypad keypad";
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 2px;    
+    height: 365px;
+    background-color: rgba(165, 42, 42, 0.932);
+}
+
+.keypad{
+    grid-area: keypad;
+    display: grid;
+    grid-template-areas: "upperpad upperpad upperpad sidepad"
+                        "numberpad numberpad numberpad sidepad"
+                        "numberpad numberpad numberpad sidepad";                      
+    height: 200px;
+    grid-gap: 5px;
+}
+
+.upperpad{
+    display: grid;
+    grid-area: upperpad;
+    grid-template-areas: "history itemc itemdel itemdiv";
+    grid-template-columns: 80px auto;
+    grid-template-rows: 30px;
+    margin: 0px 0px -30px 0px;
+    height: 75px;
+    grid-gap: 2px;
+}
+
+.upperpad .history{
+    height: 42px;
+}
+
+.upperpad button{
+    height: 44px;
+}
+
+.numberpad{
+    display: grid;
+    grid-area: numberpad;
+    grid-template-areas: "item7 item8 item9"
+                        "item4 item5 item6"
+                        "item1 item2 item3"
+                        "item0 item0 itemdot";
+    grid-area: 1px;
+    height: 180px;
+    grid-gap: 2px;
+}
+
+#historyDisplay{
+    background-color: rgb(55, 65, 65);
+    min-width: 150px;
+    height: 360px;
+    margin: 0px 0px 30px 5px;
+    border: 5px solid rgb(109, 107, 107);
+    border-radius: 20px;
+    
+}
+
+#prev{
+    font-size: 12px;
+    margin-bottom: 10px;
+    color: gray;
+}
+
+.sidepad button, .upperpad button, .history{
+    background-color: rgba(37, 36, 36, 0.733);
+    color: white;
+}
+
+.numberpad button {
+    background-color: rgba(37, 36, 36, 0.89);
+    color: white;
+}
+
+.numberpad button:hover, .sidepad button:hover, .upperpad button:hover, .history:hover{
+    background-color: rgba(134, 130, 130, 0.726);
+    color: white;
+}
+
+.sidepad{
+    display: grid;
+    grid-area: sidepad;
+    grid-template-areas:"itemtimes"
+                        "itemminus"
+                        "itemplus"
+                        "itemequal";
+    grid-template-columns: 30px;
+    grid-gap: 2px;
+}
+
+.sidepad button{
+    width: 52px;
+}
+
+.sidepad .itemequal{
+    background-color: rgba(219, 50, 50, 0.432);
+}
+
+.history
+{
+    display: flex;
+    grid-area: history;    
+    background-image: url("./assets/history.png");
+    background-size: cover;
+    padding: 0px 0px 0px 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+button, .history{
+    border: 0.1px solid rgba(124, 118, 118, 0.801);
+    border-radius: 5px;
+}
+
+.screen{
+    background: rgba(0, 0, 0, 0.842);
+    grid-area: screen;
+    width: 250px;
+    height: 50px;
+    padding: 5px;
+    border: 5px solid rgba(128, 128, 128, 0.884);
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+    text-align: end;
+}
+
+.itemc{
+    grid-area: itemc;
+    
+}
+
+.itemdel{
+    grid-area: itemdel;
+}
+
+.itemdiv{
+    grid-area: itemdiv;
+}
+
+.itemtimes{
+    grid-area: itemtimes;
+}
+
+.item7{
+    grid-area: item7;
+}
+
+.item8{
+    grid-area: item8;
+}
+
+.item9{
+    grid-area: item9;
+}
+
+.itemminus{
+    grid-area: itemminus;
+}
+
+.itemplus{
+    grid-area: itemplus;
+}
+
+.item4{
+    grid-area: item4;
+}
+
+.item5{
+    grid-area: item5;
+}
+
+.item6{
+    grid-area: item6;
+}
+
+.item1{
+    grid-area: item1;
+}
+
+.item2{
+    grid-area: item2;
+}
+
+.item3{
+    grid-area: item3;
+}
+
+.item0{
+    grid-area: item0;
+}
+
+.itemdot{
+    grid-area: itemdot;
+}
+
+.itemequal{
+    grid-area: itemequal;
+}
