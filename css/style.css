@@ -64,6 +64,10 @@ body{
     grid-gap: 2px;
 }
 
+.history{
+    align-items: center;
+}
+
 #historyDisplay{
     background-color: rgb(55, 65, 65);
     min-width: 150px;
