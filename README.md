@@ -1,5 +1,5 @@
 Vista previa de calculadara
-<img src="./assets/Captura.PNG">
+<img src="./assets/preview.PNG">
 
 Stack de tecnologias:
     -HTML 
