@@ -26,6 +26,22 @@ class Calculator{
         this.current = eval(operation);
     }
 
+    addRecord(){
+        let temp = ""+this.prev.toString() + this.current.toString();
+        let len = localStorage.length + 1;
+        localStorage.setItem(len.toString(),temp);
+    }
+
+    updateRecords(){
+        let len = localStorage.length-1;
+        let key = localStorage.key(len);
+        let record = document.createElement("p");
+        let text = document.createTextNode(localStorage.getItem(key));
+        const el = document.getElementById("historyDisplay");
+        record.appendChild(text);
+        el.appendChild(record);
+    }
+
     clearDisplay(){
         this.operator = undefined;
         this.prev = "";
@@ -68,6 +84,8 @@ operators.forEach(operator => {
 
 equals.addEventListener("click", () => {
     calculator.getResult();
+    calculator.addRecord();
+    calculator.updateRecords();
     calculator.updateDisplay();
 });
 
@@ -79,7 +97,6 @@ clear.addEventListener("click", () => {
 del.addEventListener("click", () => {
     calculator.delDisplay();
     calculator.updateDisplay();
-    toggle();
 });
 
 function toggle(){

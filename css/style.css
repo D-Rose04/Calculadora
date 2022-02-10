@@ -78,6 +78,17 @@ body{
     
 }
 
+#historyDisplay p{
+    color: white;
+    text-align: end;
+    margin-right: 15px;
+}
+
+#historyDisplay h3{
+    color: white;
+    text-align: center;
+}
+
 #prev{
     font-size: 12px;
     margin-bottom: 10px;
